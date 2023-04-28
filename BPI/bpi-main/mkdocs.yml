@@ -1,0 +1,206 @@
+site_name: "BPI : c'est en programmant qu'on devient programmeur (mais pas que)"
+docs_dir: web
+site_url: ""
+use_directory_urls: False
+theme:
+   name: material
+   logo: imgs/logo.svg
+   favicon: imgs/logo.svg
+   palette:
+       primary: amber
+   features:
+     - tabs
+markdown_extensions:
+   - md_in_html
+   - pymdownx.highlight:
+       linenums: true
+   - pymdownx.superfences
+   - admonition
+   - pymdownx.arithmatex
+extra_javascript:
+   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+nav:
+   - 1- Bases:
+      - Sommaire: 1-bases/sommaire.md
+      - CM1: 1-bases/1-bases.pdf
+      - TDs:
+         - TD1. Premiers programmes: 1-bases/travaux-diriges/01-c-est-parti/README.md
+         - TD2. Opérateurs booléens: 1-bases/travaux-diriges/02-operateurs-booleens/README.md
+         - TD3. Conditionnelles: 1-bases/travaux-diriges/03-conditionnelles/README.md
+      - TPs:
+         - TP1. Let's go!:
+            - Exercices:
+               - Unix is love: 1-bases/travaux-pratiques/01-premiers-programmes/exercices/01-unixislove/README.md
+               - Monsieur propre: 1-bases/travaux-pratiques/01-premiers-programmes/exercices/02-monsieur-propre/README.md
+               - L'âge du capitaine: 1-bases/travaux-pratiques/01-premiers-programmes/exercices/03-age-du-capitaine/README.md
+               - 0+0: 1-bases/travaux-pratiques/01-premiers-programmes/exercices/04-somme/README.md
+               - Par où on rentre ?: 1-bases/travaux-pratiques/01-premiers-programmes/exercices/05-par-ou-on-rentre/README.md
+               - Premier module: 1-bases/travaux-pratiques/01-premiers-programmes/exercices/06-modules/README.md
+               - Tuples: 1-bases/travaux-pratiques/01-premiers-programmes/exercices/07-tuples/README.md
+               - Structures: 1-bases/travaux-pratiques/01-premiers-programmes/exercices/08-type-structure/README.md
+         - TP2. Module SVG:
+            - Exercices:
+               - Création de fichiers: 1-bases/travaux-pratiques/02-module-svg-and-co/exercices/01-ecriture-fichier/README.md
+               - f-strings: 1-bases/travaux-pratiques/02-module-svg-and-co/exercices/02-fstrings/README.md
+               - Module SVG: 1-bases/travaux-pratiques/02-module-svg-and-co/exercices/03-svg/README.md
+               - Installation d'un module: 1-bases/travaux-pratiques/02-module-svg-and-co/exercices/04-installation-d-un-module/README.md
+               - Interpréteur interactif: 1-bases/travaux-pratiques/02-module-svg-and-co/exercices/05-interpreteur-interactif/README.md
+         - TP3. Tortue Logo:
+            - Mini projets:
+               - Tortue Logo: 1-bases/travaux-pratiques/03-tortue-logo/mini-projets/01-tortue-logo/README.md
+         - TP4. nirPrfne:
+            - Mini projets:
+               - nirPrfne: 1-bases/travaux-pratiques/04-nirPrfne/mini-projets/01-nirPrfne/README.md
+      - TPs optionnels:
+         - TPopt1. Morpion:
+            - Exercices:
+               - Débogage avec pdb: 1-bases/travaux-pratiques/01-morpion/exercices/14-debogueur-python/README.md
+            - Mini projets:
+               - Morpion: 1-bases/travaux-pratiques/01-morpion/mini-projets/01-morpion/README.md
+   - 2- Iterations:
+      - Sommaire: 2-iterations/sommaire.md
+      - CM2: 2-iterations/2-iterations.pdf
+      - TA vs SDD: 2-iterations/adt_sdd.pdf
+      - TDs:
+         - TD4. Tableau, tableaux dynamiques et boucles: 2-iterations/travaux-diriges/04-boucles-for-et-while/README.md
+         - TD5. Séquences de caractères: 2-iterations/travaux-diriges/05-sequences-caracteres/README.md
+         - TD6. Algorithmes de tri: 2-iterations/travaux-diriges/06-algorithmes-de-tri/README.md
+         - TD7. Structure de données: 2-iterations/travaux-diriges/07-sdd-et-complexite/README.md
+         - TD8. Pierre Larousse: 2-iterations/travaux-diriges/08-larousse-et-son-dico/README.md
+      - TPs:
+         - TP5. Convertisseur:
+            - Exercices:
+               - Boucles for: 2-iterations/travaux-pratiques/05-convertisseur/exercices/01-boucles-for/README.md
+            - Mini projets:
+               - Convertisseur: 2-iterations/travaux-pratiques/05-convertisseur/mini-projets/01-convertisseur/README.md
+         - TP6. Images PGM:
+            - Exercices:
+               - Le hasard fait bien les choses: 2-iterations/travaux-pratiques/06-images-pgm/exercices/01-le-hasard-fait-bien-les-choses/README.md
+            - Mini projets:
+               - Images PGM: 2-iterations/travaux-pratiques/06-images-pgm/mini-projets/01-images-pgm/README.md
+         - TP7. Kaléidoscope:
+            - Exercices:
+               - Ligne de commandes et arguments: 2-iterations/travaux-pratiques/07-kaleidoscope/exercices/01-parametres-main/README.md
+            - Mini projets:
+               - Kaléidoscope: 2-iterations/travaux-pratiques/07-kaleidoscope/mini-projets/01-kaleidoscope/README.md
+         - TP8. Serpent:
+            - Mini projets:
+               - Plateau: 2-iterations/travaux-pratiques/08-serpent/mini-projets/01-serpent/README.md
+         - TP9. Sous-suite:
+            - Exercices:
+               - Tableaux: 2-iterations/travaux-pratiques/09-sous-suite/exercices/01-tableaux/README.md
+               - Lecture de fichier: 2-iterations/travaux-pratiques/09-sous-suite/exercices/02-lecture-fichier/README.md
+            - Mini projets:
+               - Sous-suite monotone: 2-iterations/travaux-pratiques/09-sous-suite/mini-projets/01-sous-suite-monotone/README.md
+         - TP10. Tout éteint:
+            - Exercices:
+               - Le juste prix: 2-iterations/travaux-pratiques/10-tout-eteint/exercices/01-le-juste-prix/README.md
+            - Mini projets:
+               - Tout éteint: 2-iterations/travaux-pratiques/10-tout-eteint/mini-projets/01-tout-eteint/README.md
+         - TP11. Pivot:
+            - Exercices:
+               - Et ça continue, encore et encore...: 2-iterations/travaux-pratiques/11-pivot/exercices/01-et-ca-continue-encore-et-encore/README.md
+            - Mini projets:
+               - Pivot: 2-iterations/travaux-pratiques/11-pivot/mini-projets/01-pivot/README.md
+         - TP12. Examen mi-parcours:
+            - Sujet: exam_1/README.md
+         - TP13. Mots suivants:
+            - Exercices:
+               - Dictionnaires: 2-iterations/travaux-pratiques/13-mots-suivants/exercices/01-dico/README.md
+            - Mini projets:
+               - Mots suivants: 2-iterations/travaux-pratiques/13-mots-suivants/mini-projets/01-mots-suivants/README.md
+      - TPs optionnels:
+         - TPopt2. Échiquier:
+            - Mini projets:
+               - Echiquier: 2-iterations/travaux-pratiques/01-echiquier/mini-projets/01-echiquier/README.md
+         - TPopt3. Blobwars:
+            - Exercices:
+               - Je m'en vais comme un prince !: 2-iterations/travaux-pratiques/02-blobwars/exercices/01-je-m-en-vais-comme-un-prince/README.md
+            - Mini projets:
+               - Blob wars: 2-iterations/travaux-pratiques/02-blobwars/mini-projets/01-blobwars/README.md
+         - TPopt4. Ressources:
+            - Mini projets:
+               - Ressources: 2-iterations/travaux-pratiques/03-ressources/mini-projets/01-ressources/README.md
+         - TPopt5. Performance de SDD:
+            - Exercices:
+               - Le temps qui passe ...: 2-iterations/travaux-pratiques/04-perf-sdd/exercices/01-mesure-du-temps/README.md
+            - Mini projets:
+               - Mesure de perf - sdd: 2-iterations/travaux-pratiques/04-perf-sdd/mini-projets/01-sdd/README.md
+   - 3- References:
+      - Sommaire: 3-references/sommaire.md
+      - CM3: 3-references/3-references.pdf
+      - TDs:
+         - TD9. Classes, instances et références: 3-references/travaux-diriges/09-classes-objets-references/README.md
+         - TD10. Listes simplement chaînées: 3-references/travaux-diriges/10-listes-simplement-chainees/README.md
+         - TD11. Exceptions, files et piles: 3-references/travaux-diriges/11-piles-et-files/README.md
+         - TD12. Redonnons la main: 3-references/travaux-diriges/12-yieldons/README.md
+         - TD13. Listes doublement chaînées: 3-references/travaux-diriges/13-listes-doublement-chainees/README.md
+      - TPs:
+         - TP14. Retour examen mi-parcours:
+            - Sujet: exam_1/README.md
+         - TP15. ListEs:
+            - Exercices:
+               - Première classe: 3-references/travaux-pratiques/15-listes-sc/exercices/01-premiere-classe/README.md
+               - Débogage visuel: 3-references/travaux-pratiques/15-listes-sc/exercices/02-debogage-visuel/README.md
+            - Mini projets:
+               - Listes simplement chaînées: 3-references/travaux-pratiques/15-listes-sc/mini-projets/01-listes-simplement-chainees/README.md
+         - TP16. Circulez sentinelle !:
+            - Mini projets:
+               - Listes simplement chaînées triées circulaires avec sentinelle: 3-references/travaux-pratiques/16-listes-sc-circulaires-senti/mini-projets/01-listes-triees-circulaires/README.md
+         - TP17. Yield:
+            - Exercices:
+               - Référence vers une fonction: 3-references/travaux-pratiques/17-op-listes-sc-yield/exercices/01-reference-vers-fonction/README.md
+               - yield: 3-references/travaux-pratiques/17-op-listes-sc-yield/exercices/02-yield/README.md
+            - Mini projets:
+               - Opérations sur listes simplement chaînées: 3-references/travaux-pratiques/17-op-listes-sc-yield/mini-projets/01-operations-sur-listes/README.md
+         - TP18. Faut partager:
+            - Mini projets:
+               - Listes simplement chaînées avec partage de suffixes: 3-references/travaux-pratiques/18-listes-sc-partage-suffixes/mini-projets/01-listes-avec-partage-de-suffixe/README.md
+      - TPs optionnels:
+         - TPopt6. Performance du tri:
+            - Mini projets:
+               - Mesure de perf - tri: 3-references/travaux-pratiques/01-analyse-perf-tri/mini-projets/01-perf-sort/README.md
+         - TPopt7. Mots suivants yield:
+            - Mini projets:
+               - Mots suivants avec yield: 3-references/travaux-pratiques/02-mots-suivants-yield/mini-projets/01-mots-suivants-yield/README.md
+         - TPopt8. Analyse traceur:
+            - Mini projets:
+               - Analyse du module traceur: 3-references/travaux-pratiques/03-analyse-traceur/mini-projets/01-analyse-module-traceur/README.md
+         - TPopt9. Analyse de perf listEs chaînées:
+            - Mini projets:
+               - Analyse de performance: 3-references/travaux-pratiques/04-analyse-perf-lc/mini-projets/01-analyse-perfs/README.md
+   - 4- Recursivite:
+      - Sommaire: 4-recursivite/sommaire.md
+      - CM4: blocked.md
+      - TDs:
+         - TD14. Premières fonctions récursives: 4-recursivite/travaux-diriges/14-premieres-fonctions-recursives/README.md
+         - TD15. Entiers récursifs: 4-recursivite/travaux-diriges/15-entiers-recursifs/README.md
+         - TD16. Lancer de dés: 4-recursivite/travaux-diriges/16-lancer-de-des/README.md
+         - TD17. Le problème de partition: 4-recursivite/travaux-diriges/17-2-partitions/README.md
+      - TPs:
+         - TP19. Fractales:
+            - Exercices:
+               - Incrémente: 4-recursivite/travaux-pratiques/19-fractales/exercices/01-incremente/README.md
+               - Stack overflow: 4-recursivite/travaux-pratiques/19-fractales/exercices/02-stackoverflow/README.md
+            - Mini projets:
+               - Fractales: 4-recursivite/travaux-pratiques/19-fractales/mini-projets/01-fractales/README.md
+         - TP20. Labyrinthe:
+            - Mini projets:
+               - Labyrinthe: 4-recursivite/travaux-pratiques/20-labyrinthe/mini-projets/01-labyrinthe/README.md
+         - TP21. solitaire:
+            - Mini projets:
+               - Solitaire: 4-recursivite/travaux-pratiques/21-solitaire/mini-projets/01-solitaire/README.md
+      - TPs optionnels:
+         - TPopt10. Flocon de Koch:
+            - Mini projets:
+               - Flocon de Koch: 4-recursivite/travaux-pratiques/01-flocon-koch/mini-projets/01-flocon-koch/README.md
+   - Projet:
+      - Sujet: projet/README.md
+   - Examen mi-parcours :
+      - Sujet: exam_1/README.md
+   - Examen final :
+      - Sujet : exam_2/README.md
+   - Examen session 2 :
+      - Sujet : exam_3/README.md
+   - Annales examens :
+      - 2021/2022 : exam_2/previous_years/2021-2022/README.md

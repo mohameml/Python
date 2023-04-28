@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
+<g stroke="black" fill="red" stroke-width="5">
+<circle cx="10" cy="10" r="30" />
+</g>
+<g stroke="red" fill="black" stroke-width="5">
+<circle cx="100" cy="100" r="60" />
+<circle cx="180" cy="50" r="10" />
+</g>
+</svg>
