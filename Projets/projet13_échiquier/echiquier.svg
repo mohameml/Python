@@ -1,0 +1,39 @@
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='404' height='404'>
+<g stroke='red' fill='white' stroke-width='2'>
+<rect x="1" y="1" width="402" height="402" />
+</g>
+<g stroke='none' fill='black' stroke-width='0'>
+<rect x="52" y="2" width="50" height="50" />
+<rect x="152" y="2" width="50" height="50" />
+<rect x="252" y="2" width="50" height="50" />
+<rect x="352" y="2" width="50" height="50" />
+<rect x="2" y="52" width="50" height="50" />
+<rect x="102" y="52" width="50" height="50" />
+<rect x="202" y="52" width="50" height="50" />
+<rect x="302" y="52" width="50" height="50" />
+<rect x="52" y="102" width="50" height="50" />
+<rect x="152" y="102" width="50" height="50" />
+<rect x="252" y="102" width="50" height="50" />
+<rect x="352" y="102" width="50" height="50" />
+<rect x="2" y="152" width="50" height="50" />
+<rect x="102" y="152" width="50" height="50" />
+<rect x="202" y="152" width="50" height="50" />
+<rect x="302" y="152" width="50" height="50" />
+<rect x="52" y="202" width="50" height="50" />
+<rect x="152" y="202" width="50" height="50" />
+<rect x="252" y="202" width="50" height="50" />
+<rect x="352" y="202" width="50" height="50" />
+<rect x="2" y="252" width="50" height="50" />
+<rect x="102" y="252" width="50" height="50" />
+<rect x="202" y="252" width="50" height="50" />
+<rect x="302" y="252" width="50" height="50" />
+<rect x="52" y="302" width="50" height="50" />
+<rect x="152" y="302" width="50" height="50" />
+<rect x="252" y="302" width="50" height="50" />
+<rect x="352" y="302" width="50" height="50" />
+<rect x="2" y="352" width="50" height="50" />
+<rect x="102" y="352" width="50" height="50" />
+<rect x="202" y="352" width="50" height="50" />
+<rect x="302" y="352" width="50" height="50" />
+</g>
+</svg>
