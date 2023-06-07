@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
+<g fill="green" stroke="green" stroke-width="3">
+<rect x="50.0" y="50.0" width="100.0" height="100.0" />
+</g>
+<g fill="None" stroke="yellow" stroke-width="2">
+<polygon points="0,0 200,0 100.0,200 " />
+</g>
+<g fill="None" stroke="yellow" stroke-width="2">
+<polygon points="0,200 200,200 100.0,0 " />
+</g>
+<g fill="None" stroke="yellow" stroke-width="2">
+<polygon points="200,0 200,200 0,100.0 " />
+</g>
+<g fill="None" stroke="yellow" stroke-width="2">
+<polygon points="0,0 0,200 200,100.0 " />
+</g>
+<g fill-opacity="0.3">
+<text x="90.0" y="100.0"  height="5"  > svg </text>
+</g>
+</svg>
