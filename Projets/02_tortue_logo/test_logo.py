@@ -13,11 +13,7 @@ def main():
     print(svg.genere_balise_debut_image(100, 100))
     # En python on peut nommer les arguments quand on appelle une
     # fonction. Cela rend le code beaucoup plus lisible en général.
-    print(
-        svg.genere_balise_debut_groupe(
-            couleur_ligne="black", couleur_remplissage="none", epaisseur_ligne=3
-        )
-    )
+    print(svg.genere_balise_debut_groupe(couleur_ligne="black", couleur_remplissage="none", epaisseur_ligne=3))
 
     # Notre tortue est représentée par 4 infos :
     abscisse = 0.0
@@ -30,6 +26,7 @@ def main():
     # On se déplace sans dessiner
     direction = logo.tourne_droite(direction, 180.0)
     # Ici on fait du tuple unpacking : on récupère d'un coup les 2 éléments du tuple.
+    
     abscisse, ordonnee = logo.avance(abscisse, ordonnee, direction, crayon_en_bas, 50.0)
     direction = logo.tourne_gauche(direction, 90.0)
     abscisse, ordonnee = logo.avance(abscisse, ordonnee, direction, crayon_en_bas, 50.0)
