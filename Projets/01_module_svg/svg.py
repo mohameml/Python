@@ -26,7 +26,8 @@ def genere_balise_debut_image(largeur, hauteur):
     
   """
   
-  return f'<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="{largeur}" height="{hauteur}">'
+  # TODO 
+  ...
 
 
 def genere_balise_fin_image():
@@ -35,7 +36,8 @@ def genere_balise_fin_image():
   Cette balise doit être placée après tous les éléments de description de
   l'image, juste avant la fin du fichier.
   """
-  return "</svg>"
+  # TODO 
+  ...
 
 
 
@@ -55,7 +57,8 @@ def genere_balise_debut_groupe(couleur_ligne, couleur_remplissage,epaisseur_lign
     largeur du tracé d'une ligne en pixels.
     
   """
-  return f'<g fill="{couleur_remplissage}" stroke="{couleur_ligne}" stroke-width="{epaisseur_ligne}">'
+  # TODO 
+  ...
 
 
 def genere_balise_fin_groupe():
@@ -64,7 +67,8 @@ def genere_balise_fin_groupe():
     groupe d'éléments.
     """
   
-  return "</g>"
+  # TODO 
+  ...
 
 
 # À implémenter dans 'TP2. Module SVG'
@@ -79,7 +83,8 @@ def genere_cercle(centre, rayon):
   
   """
   
-  return f'<circle cx="{centre.x}" cy="{centre.y}" r="{rayon}" />'
+  # TODO 
+  ...
 
 
 
@@ -89,7 +94,8 @@ def genere_segment(dep, arr):
     un segment. Ce segment relie les points dep et arr.
   """
   
-  return f'<line x1="{dep.x}" y1 = "{dep.y}" x2="{arr.x}" y2 ="{arr.y}" />'
+  # TODO 
+  ...
 
 
 
@@ -98,7 +104,8 @@ def genere_rectangle(top_left, width, height):
     Retourne la chaîne de caractères correspondant à un élément SVG représentant un rectangle.
   
   """
-  return f'<rect x="{top_left.x}" y="{top_left.y}" width="{width}" height="{height}" />'
+  # TODO 
+  ...
 
 
 
@@ -109,9 +116,8 @@ def genere_polygone(points):
   
   """
   
-  chaine ="".join([f'{point.x},{point.y} ' for point in  points])
-  
-  return f'<polygon points="{chaine}" />'
+  # TODO 
+  ...
   
   
 
@@ -128,7 +134,8 @@ def genere_balise_debut_groupe_transp(niveau_opacite):
     
   """
   
-  return f'<g fill-opacity="{niveau_opacite}">'
+  # TODO 
+  ...
 
 
 
@@ -140,7 +147,8 @@ def genere_zone_colorie(x_min, y_min, largeur, hauteur, couleur_remplissage):
     
   """
   
-  return f'<rect x="{x_min}" y="{y_min}" width="{largeur}" height="{hauteur}" fill="{couleur_remplissage}" />'
+  # TODO 
+  ...
   
 
 
@@ -156,7 +164,7 @@ def genere_texte(x_min, y_bas, contenu, hauteur):
     
   """
   
-  #  <text x="0" y="15" fill="red">I love SVG!</text>
-  return f'<text x="{x_min}" y="{y_bas}"  height="{hauteur}"  > {contenu} </text>'
+  # TODO 
+  ...
 
 
