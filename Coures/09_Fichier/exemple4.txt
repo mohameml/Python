@@ -1,0 +1,5 @@
+* girafe
+* tigre
+* singe
+* souris
+* sidi
