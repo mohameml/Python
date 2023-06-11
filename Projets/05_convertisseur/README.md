@@ -45,6 +45,7 @@ def convertit():
         print(chaine_svg)
     print(svg.genere_balise_fin_groupe())
     print(svg.genere_balise_fin_image())
+    
 ```
 </details>
 
