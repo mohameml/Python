@@ -1,4 +1,8 @@
-## Énoncé
+# Énoncé
+
+
+##  I.Premiéres pas 
+
 
 On se propose maintenant de travailler avec le format d'image `PGM`, qui est un format texte.
 Le format est très simple. Une image `PGM` contient les informations suivantes :
@@ -23,6 +27,68 @@ Le programme fonctionne de la maniere suivante  :
 Voici un exemple de résultat :
 
 ![exemple de resultat](exemple.png)
+
+
+## II.Module PPM :
+
+ Cette partie  consiste à développer un module simple de dessin permettant de tracer des cercles, des droites, des figures géométriques basiques 
+ 
+(tels que des carrés, des triangles, des rectangles) et d'ajouter du texte à une image au format PPM (Portable Pixel Map)
+
+
+### 1. génération de cercele :
+
+
+l' algorithme  pour générer un cercle dans une image au format PPM  est simple :
+
+    *  Définir les paramètres du cercle :
+
+            Centre du cercle : (centre_x, centre_y)
+            Rayon du cercle : r
+            Couleur du disque 
+
+    * Pour chaque pixel de l'image :
+
+            Calculer la distance entre le pixel et le centre du cercle .
+            distance = sqrt((x - x_centre)^2 + (y - y_centre)^2).
+
+            Si la distance est inférieure ou égale au rayon du cercle :
+                    Définir la couleur du pixel comme la couleur du cercle 
+            Sinon: 
+                    laisser la couleur du pixel inchangée.
+
+
+### 2. génération de segement  (Algo de Bresenham):
+
+
+
+
+L'algorithme de tracé de segment de Bresenham est un algorithme utilisé pour dessiner des segments de ligne à l'aide de coordonnées entières. Il est particulièrement efficace car il n'utilise que des opérations entières (pas de calculs flottants) et évite ainsi les erreurs d'arrondi.
+
+L'algorithme de Bresenham fonctionne en tracant des pixels sur une grille en fonction d'une pente donnée (déterminée par les points de départ et d'arrivée du segment). L'algorithme décide quel pixel dessiner à chaque étape en fonction de l'erreur accumulée lors des étapes précédentes.
+
+Voici les grandes étapes de l'algorithme de tracé de segment de Bresenham :
+
+1. Prendre les coordonnées des points de départ (x1, y1) et d'arrivée (x2, y2) du segment.
+2. Calculer la différence en x (dx = x2 - x1) et la différence en y (dy = y2 - y1).
+3. Calculer l'incrément de x (step_x) en fonction de dx (1 si dx est positif, -1 sinon).
+4. Calculer l'incrément de y (step_y) en fonction de dy (1 si dy est positif, -1 sinon).
+5. Calculer l'erreur initiale (erreur_initiale) en utilisant la différence en x et en y.
+6. Pour chaque pixel du segment :
+   - Dessiner le pixel correspondant à (x, y).
+   - Mettre à jour l'erreur_initiale.
+   - Si l'erreur_initiale dépasse la moitié de la distance entre deux pixels adjacents, ajuster la position verticalement (y) et mettre à jour l'erreur_initiale en conséquence.
+   - Déplacer horizontalement (x) selon step_x.
+7. Répéter l'étape 6 jusqu'à ce que le dernier pixel du segment soit atteint.
+
+
+
+
+
+
+pour plus des infos consulter le vidéo : [vidéo explique l'alog Bresenham ](https://youtu.be/Frl1cLwfs1U)
+
+
 
 ## Correction
 <details markdown="1">
