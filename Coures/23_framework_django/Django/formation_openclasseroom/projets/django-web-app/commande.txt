@@ -1,0 +1,15 @@
+1.python -m veenv env # pour creer un env vertiuel
+
+2. source env/bin/activate # pour activer l'environement vertieul  
+
+3. pip install django # Apres On insttall django
+
+4.pip freeze > requirements.txt # Gardons la trace de tous les packages installées  dans un fichier requirements.txt
+ 
+5. django-admin startproect merchex # pour initialiser les fichiers de projet  
+
+6. cd merchex/ 
+
+7. python manage.py runserver # pour executer le serveur 
+
+8. 
