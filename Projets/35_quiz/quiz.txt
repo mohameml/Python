@@ -1,0 +1,102 @@
+Q1. Quelle est la sortie de ce code Python ?
+x = 10
+y = 3
+print(x // y)
+
+a. 3
+b. 3.33
+c. 3.0
+d. 10
+
+Réponse : c 
+
+Q2. Quelle est la méthode pour supprimer un élément d'une liste en Python ?
+
+a. remove()
+b. delete()
+c. pop()
+d. discard()
+
+Réponse : a
+
+Q3. Quelle est la différence entre les méthodes append() et extend() pour ajouter des éléments à une liste en Python ?
+
+a. append() ajoute un seul élément à la fin de la liste, tandis que extend() ajoute plusieurs éléments à la fin de la liste.
+b. append() ajoute plusieurs éléments à la fin de la liste, tandis que extend() ajoute un seul élément à la fin de la liste.
+c. append() et extend() ajoutent un seul élément à la fois à la fin de la liste.
+d. Il n'y a pas de différence entre append() et extend().
+
+Réponse : a
+
+Q4. Quelle est la méthode pour inverser l'ordre des éléments dans une liste en Python ?
+
+a. reverse()
+b. sort()
+c. invert()
+d. flip()
+
+Réponse : a
+
+Q5. Quelle est la sortie de ce code Python ?
+
+x = [1, 2, 3, 4, 5]
+print(x[1:3])
+
+a. [1, 2]
+b. [2, 3]
+c. [2, 3, 4]
+d. [1, 3]
+
+Réponse : b                                                                                                 
+
+
+Q6. Quelle est la méthode pour convertir une chaîne de caractères en majuscules en Python ?
+
+a. upper()
+b. capitalize()
+c. title()
+d. uppercase()
+
+Réponse : a
+
+Q7. Quelle est la fonction pour calculer la longueur d'une chaîne de caractères en Python ?
+
+a. length()
+b. count()
+c. size()
+d. len()
+
+Réponse : d
+
+Q8. Quelle est la méthode pour ouvrir un fichier en écriture en Python ?
+
+a. open('nom_fichier.txt', 'w')
+b. open('nom_fichier.txt', 'r')
+c. open('nom_fichier.txt', 'a')
+d. open('nom_fichier.txt', 'x')
+
+Réponse : a
+
+Q9. Quelle est la sortie de ce code Python ?
+
+x = [1, 2, 3]
+y = x
+y.append(4)
+print(x)
+
+a. [1, 2, 3]
+b. [1, 2, 3, 4]
+c. [4]
+d. Une erreur se produit.
+
+Réponse : b
+
+Q10. Quelle est la méthode pour vérifier si une clé existe dans un dictionnaire en Python ?
+
+a. contains()
+b. exists()
+c. in()
+d. has_key()
+
+Réponse : c
+
