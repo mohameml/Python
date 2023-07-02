@@ -1,0 +1,127 @@
+------------------------------------
+I. Créer l'environnement virtuel
+-------------------------------------
+1. python3 -m venv env # pour créer un env virtuel 
+2. source env/bin/activate # pour activer l'env virtuel
+3. which python # pour la verification 
+
+
+------------------------------------
+II. Installer Django avec pip
+-------------------------------------
+tout d'abord assurer vous que l'env est activer
+
+4. pip install --upgrade pip # mis a jour de pip
+5. pip install django==3.1.6 # installer django avec une version précise   
+6. python -m django --version # verification 
+7. pip freeze > requirements.txt 
+8. pip install -r requirements.txt # si on veut installer à nouveau  
+
+
+------------------------------------
+III. Créer un projet Django 
+-------------------------------------
+9. django-admin startproject <nom_projet> # pour initialiser un projet django 
+10. django-admin --help 
+11. django-admin help <commande>
+
+------------------------------------
+III. le structure d'un projet Django 
+-------------------------------------
+
+12. les fichiers : asgi.py && wsgi.py : utilier lors de déploiement de site sur un serveru web 
+
+13. le fichier manage.py : pour lancer le serveur local 
+14. le fichier urls.py : pour le Modéle URL 
+15. le fichier settings.py # le fichier qui conteint tout les préferences de notre app 
+
+
+------------------------------------
+IV. lancer le serveur 
+-------------------------------------
+
+Django dispose d'un serveur (pour le dev et non la production ) 
+pour lancer le serveur : 
+16. python manage.py runserver (assurer vous d'activer l'env virtuel )
+17. python manage.py migrate # pour appliquer les migrations 
+
+
+------------------------------------
+V. Créer un chemin d'URL :
+-------------------------------------
+par defaut on'a un chemin d'URL : path('admin/',admin.site.urls)
+
+18 . from django.views.defaults import server_error #  view d'erreure 500 
+     path('test/',server_error)
+
+19. chemin URL : path('url/' , view) # avce view fonction : view(request)---> HttpResponse
+
+
+------------------------------------
+VI. le parmétre APPEEND_SLASH 
+-------------------------------------
+
+il s'agit d'une variable d'énvironnement qui fait une redriction d'url sans slash a la fin vers un url avce un slash à la fin 
+par defaut : APPEEND_SLASH  = True 
+
+
+------------------------------------
+VII .  Créer une vue pour l'URL :
+-------------------------------------
+
+une vue (view) est une fonction ou une méthode qui traite une requête HTTP spécifique et renvoie une réponse. 
+
+Une vue est responsable de l'interprétation des données de la requête, de l'exécution des traitements nécessaires et de la construction de la réponse à renvoyer au client.
+
+Dans le contexte de Django, une vue est généralement définie comme une fonction dans un fichier Python, ou parfois comme une méthode dans une classe appelée "vue basée sur une classe". La fonction ou la méthode de la vue prend en général deux paramètres : la requête HTTP (request) et éventuellement d'autres paramètres, et elle renvoie une réponse HTTP.
+
+Les vues dans Django sont configurées à l'aide du fichier urls.py, qui associe des URL spécifiques aux vues correspondantes. Lorsqu'un utilisateur accède à une URL donnée dans l'application Django, le framework utilise la configuration des URL pour déterminer quelle vue doit être appelée pour traiter cette requête.
+
+
+------------------------------------
+VIII .  Créer une template :
+-------------------------------------
+20. si on créer un dossier templates  il faut : 
+---- ajouter le chemin dans la variable dans la liste DIRS (TEMPLATES) :
+   'DIRS'=[os.path.join(BASE_DIR , "DocBlog/templates/")]
+----- utiliser la fonction render : render(request , "page.html") (dans views.py)
+	from django.shortcuts import render
+
+ 
+
+
+--------------------------------------------
+VV . Insérer des donnes dans une template  :
+---------------------------------------------
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
