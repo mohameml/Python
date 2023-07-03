@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/mohameml/Python/Coures/03_niveau_avancée/03_framework_django/Django/formation_openclasseroom/projets/django-web-app/env/bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

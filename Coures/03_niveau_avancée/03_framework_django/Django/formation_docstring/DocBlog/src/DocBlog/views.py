@@ -1,9 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from datetime import datetime
+
 
 def index(request):
-    return HttpResponse("<h1> Bonjour , Bienvenue sur mon site </h1>")
-
-
-def index_2(request):
-    return render(request,"exemple.html")
+    date = datetime.today()
+    my_dict = {"date":date}
+    return render(request,"DocBlog/index.html" , context =my_dict)
