@@ -4,16 +4,16 @@
 
 ### 01_niveau_debutant : 
 
-* **01_introduction**  
-* **02_variables**
-* **03_Affichage**
-* **04_conditions**
-* **05_Boucles** 
-* **06_Listes**
-* **07_chaine_des_caractéres**
-* **08_dict_set_tuple**
-* **09_Fichier** 
-* **10_les_fonctions**
+* **01_introduction**-----------------------**Done**
+* **02_variables**--------------------------**Done**
+* **03_Affichage**--------------------------**Done**
+* **04_conditions**-------------------------**Done**
+* **05_Boucles**----------------------------**Done**
+* **06_Listes**-----------------------------**Done**
+* **07_chaine_des_caractéres**--------------**Done**
+* **08_dict_set_tuple**---------------------**Done**
+* **09_Fichier**----------------------------**Done**
+* **10_les_fonctions**----------------------**Done**
 
 ### 02_niveau_intermédiaire :
 
@@ -42,6 +42,6 @@
         * **Table de Hachage**
         * **Arbre_binaire** 
         * **Tas** 
-* **03_Django**
+* **03_Django**s
 
 
