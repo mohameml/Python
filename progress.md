@@ -7,7 +7,7 @@
     <summary>Coures</summary>
     
 <details>
-    <summary>01_niveau_debutant :</summary>
+    <summary>01_niveau_debutant : <img src="done.jpg" alt="Done" width="20" height="20"> </summary>
         
 * **01_introduction**  <img src="done.jpg" alt="Done" width="20" height="20">
 * **02_variables**   <img src="done.jpg" alt="Done" width="20" height="20">
