@@ -4,16 +4,16 @@
 
 ### 01_niveau_debutant : 
 
-* **01_introduction**-----------------------**Done**
-* **02_variables**--------------------------**Done**
-* **03_Affichage**--------------------------**Done**
-* **04_conditions**-------------------------**Done**
-* **05_Boucles**----------------------------**Done**
-* **06_Listes**-----------------------------**Done**
-* **07_chaine_des_caractéres**--------------**Done**
-* **08_dict_set_tuple**---------------------**Done**
-* **09_Fichier**----------------------------**Done**
-* **10_les_fonctions**----------------------**Done**
+* **01_introduction**  <img src="done.jpg" alt="Done" width="20" height="20">
+* **02_variables**   <img src="done.jpg" alt="Done" width="20" height="20">
+* **03_Affichage**  <img src="done.jpg" alt="Done" width="20" height="20">
+* **04_conditions**  <img src="done.jpg" alt="Done" width="20" height="20">
+* **05_Boucles**   <img src="done.jpg" alt="Done" width="20" height="20">
+* **06_Listes**   <img src="done.jpg" alt="Done" width="20" height="20">
+* **07_chaine_des_caractéres**  <img src="done.jpg" alt="Done" width="20" height="20">
+* **08_dict_set_tuple**  <img src="done.jpg" alt="Done" width="20" height="20">
+* **09_Fichier**  <img src="done.jpg" alt="Done" width="20" height="20">
+* **10_les_fonctions**  <img src="done.jpg" alt="Done" width="20" height="20">
 
 ### 02_niveau_intermédiaire :
 
@@ -42,6 +42,7 @@
         * **Table de Hachage**
         * **Arbre_binaire** 
         * **Tas** 
-* **03_Django**s
+* **03_Django**
+
 
 
