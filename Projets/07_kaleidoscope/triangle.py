@@ -1,55 +1,48 @@
-"""
-Module pour manipuler des triangles.
+#!/usr/bin/env python3
 
-Le module fournit un namedtuple Triangle ainsi
-qu'une fonction triangle_aleatoire.
 """
-# START CORRECTION
-from random import randint
-from collections import namedtuple
-from math import cos, sin
+Module triangle 
+"""
+
+import random
 from svg import Point
 
-Triangle = namedtuple("Triangle", "p1 p2 p3")
+
+from math import cos, sin
 
 
-def tourne_point(point, centre, angle):
-    """Tourne le point donné"""
-    x_tourne = (
-        (point.x - centre.x) * cos(angle) - (point.y - centre.y) * sin(angle) + centre.x
-    )
-    y_tourne = (
-        (point.x - centre.x) * sin(angle) + (point.y - centre.y) * cos(angle) + centre.y
-    )
-    return Point(x_tourne, y_tourne)
+def genere_point(zone_x, zone_y):
+    "genere une point dans l'espace : [zone_x , zone_y]"
+
+    abscisse = random.randint(zone_x[0], zone_x[1])
+    ordonneé = random.randint(zone_y[0], zone_y[1])
+
+    return Point(abscisse, ordonneé)
+
+
+def triangle_aleatoire(zone_x: tuple, zone_y: tuple):
+    "return les coorrdoneés d'un triangle aléatoire "
+
+    return [genere_point(zone_x, zone_y) for _ in range(3)]
+
+
+def coordonneé_point_rotation(point, centre, angle):
+    """
+    return les coordonnées de la point = r(centre , angle)
+    x' = (x - xc) x cos(alpha) - (y - yc) x sin(alpha) + xc
+
+    y' = (x - xc) x sin(alpha) + (y - yc) x cos(alpha) + yc
+    """
+    abscisse = (point.x - centre.x)*cos(angle) - \
+        (point.y - centre.y)*sin(angle) + centre.x
+
+    ordoneé = (point.x - centre.x)*sin(angle) + \
+        (point.y - centre.y)*cos(angle) + centre.y
+
+    return Point(abscisse, ordoneé)
 
 
 def tourne_triangle_autour(triangle, centre, angle):
-    """Tourne le triangle donné"""
-    p1_tourne = tourne_point(triangle.p1, centre, angle)
-    p2_tourne = tourne_point(triangle.p2, centre, angle)
-    p3_tourne = tourne_point(triangle.p3, centre, angle)
-    return Triangle(p1_tourne, p2_tourne, p3_tourne)
+    "return les cordonnées d'un Trinagle obtenu par rotation d'un autre triangle"
 
-
-def point_aleatoire(intervalle_x, intervalle_y):
-    """Renvoie un nouveau point aléatoire dans les intervalles donnés"""
-    return Point(
-        randint(intervalle_x[0], intervalle_x[1]),
-        randint(intervalle_y[0], intervalle_y[1]),
-    )
-
-
-def triangle_aleatoire(intervalle_x, intervalle_y):
-    """Renvoie un nouveau triangle aléatoire dans le rectangle specifie par les intervalles.
-
-    Prend deux intervalles (chacun un couple de coordonnees) pour chaque dimension.
-    """
-    return Triangle(
-        point_aleatoire(intervalle_x, intervalle_y),
-        point_aleatoire(intervalle_x, intervalle_y),
-        point_aleatoire(intervalle_x, intervalle_y),
-    )
-
-
-# END CORRECTION
+    return [coordonneé_point_rotation(point, centre, angle) for point in triangle]
