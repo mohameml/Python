@@ -1,4 +1,8 @@
-# Structures des données en Python :
+# cour 08 
+
+
+
+### Structures des données en Python :
 
 | Container              | test d'appartenance et fonctionlen()| itérable | ordonné | indexable | modifiable | hachable |
 |------------------------|-------------------------------------|----------|---------|-----------|------------|----------|
