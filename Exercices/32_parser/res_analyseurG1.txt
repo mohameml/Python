@@ -1,0 +1,28 @@
+@@@@@@ test:  <function parse_v1 at 0x7f578dbebc70>
+@ input: ca
+@ error: found token 'a' but expected ''
+
+@ input: ac
+@ error: found token 'c' but expected 'a'
+
+@ input: abc
+@ error: found token '' but expected 'a'
+
+@ input: abcb
+@ error: found token '' but expected 'c'
+
+@ input: c
+@ result: a
+
+@ input: bc
+@ result: ca
+
+@ input: abcbc
+@ result: bcaca
+
+@ input: abcabcbc
+@ result: bcabcaca
+
+@ input: aabcbcbc
+@ result: bbcacaca
+
