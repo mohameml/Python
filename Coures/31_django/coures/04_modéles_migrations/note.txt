@@ -1,0 +1,40 @@
+----------------------------------
+	I. Les Modéles 
+-----------------------------------
+
+1. Déf :
+
+*. un modèle définit les caractéristiques(les champs) que nous voulons stocker à propos d'une entité particulière.
+
+*. pour creér un modéle en Django :On definit un classe en python  hérite de la classe django.db.models.Model de Django. 
+
+ 
+
+----------------------------------
+	II. Les Migrations :  
+----------------------------------
+
+
+1. Déf :
+
+Une migration est un ensemble d'instructions permettant de passer le schéma de votre base de données d'un état à un autre. Il est important de noter que ces instructions peuvent être exécutées automatiquement, comme un code.
+
+2. python manage.py makemigrations # pour créer une migration  
+
+3. python manage.py migrate # pour executer les migrations 
+
+4. pythoon manage.py shell # pour lancer le shell de django 
+
+5. Créer une ligne dans notre base de donnee (un instance ) :
+
+*. il faut tout d'abord importer votre class(Band dans notre exemple ) :
+
+*.band = Band()			| band = Band.objects.create(name =" .....")
+  band.name = " nom prenom " 	|
+  band.save()			|
+
+6. Band.objects.count() # le nb de Objets 
+7. Band.objects.all() # pour afficher la base de données 
+
+
+

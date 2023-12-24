@@ -1,0 +1,11 @@
+---------------------------------------
+Installer Django 
+----------------------------------------
+
+---------------I. l'env vertiuelle :------------
+
+1. python -m venv env # pour crréer l'env vertiuelle
+2. source bin/env/activate # pour activer l'env vertieulle 
+3. pip install django
+4. pip freeze > requirements.txt 
+ 

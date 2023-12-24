@@ -1,0 +1,15 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+<h1> Hello Django </h1>
+
+<p> Mes groupes préferes sont : </p>
+
+
+<ul>
+    {% for band in base %}
+    <li> {{band.name}} </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

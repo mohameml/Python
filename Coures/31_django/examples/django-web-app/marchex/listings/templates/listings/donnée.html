@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Notre Base </title>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            {% for band in base %}
+            <li>{{band.name}}</li>
+            {% endfor %}
+
+        </ul>
+
+        <p>
+
+            J'ai
+            {% if base|length >= 5 %} un peu {% else %} beaucoup {% endif %} des amis </p>
+
+
+    </div>
+</body>
+
+</html>

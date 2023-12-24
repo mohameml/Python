@@ -1,0 +1,32 @@
+------------------------------------------------
+	Langage de gabarit de Django : 
+------------------------------------------------
+
+1. Déf:
+Le langage de gabarit de Django : est un langage de balisage léger et simple qui permet d'insérer de manière dynamique des données dans les gabarits HTML. Il offre des fonctionnalités telles que les balises, les filtres, les variables, les boucles et les conditions pour faciliter la manipulation des données et la génération de contenu dynamique
+
+2. variables de gabarits : Les variables sont représentées par des simples accolades {{ }} et permettent d'afficher les valeurs des variables passées au gabarit à partir du contexte de rendu(dictionnaire contextuel).
+
+RQ :Dans le code du gabarit, pour accéder à un élément d'une liste, on utilise bands.0, au lieu de bands[0] comme on le fait dans le code Python.
+
+3. syntaxe de for : 
+{% for e in l %}
+......{{e}}.....
+...............;
+{% endfor %}
+
+4. *. un filtre est :  une fonctionnalité qui permet de modifier la présentation des données affichées dans un gabarit. 
+   *. syntaxe {{ variable|filtre }} pour formater, filtrer ou transformer les valeurs avant de les afficher. 
+   *. Exemple : 
+	---->  upper : pour afficher la variable en Majscules 
+	----> lower  : pour afficher la variable en minusules 
+	----> length : pour afficher len(variable)
+
+5 . syntaxe if : 
+	{% if ...condition...  %}
+	 ..... 
+	{% elif ..condition.. %}
+	....
+	{% else }
+	....
+	{% endif %} 

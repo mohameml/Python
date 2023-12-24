@@ -1,0 +1,19 @@
+-------------------------------------
+ 	Configurez un projet Django 
+-------------------------------------
+RQ1 : Assurez vous de bien activer l'env vertiuelle 
+
+1. django-admin startproject <nom_projet> # pour génere le code base de projet django 
+
+2. python manage.py runserver # pour lancer le serveur de développement 
+
+3. python manage.py migarte  # pour configurernote base de donnée
+
+RQ2 : Dans Django, une application est une sous-section de votre projet entier
+
+4. python manage.py startapp <nom_app> # pour génere le code base d'une app
+
+RQ3 : il faut ajouter le nom de l'appdans la liste : INSTALLED_APPS dans le fichier settings.py
+
+
+

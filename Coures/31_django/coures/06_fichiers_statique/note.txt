@@ -1,0 +1,43 @@
+-------------------------------------
+	Ajouter des fichiers statiques :
+---------------------------------------
+
+
+1. Definir le fichier HTML base :
+
+On definit un fichier base.html : qui contient la partie html commun de toutes les 
+fichiers html de notre page web , et dans ce fichier on ajoute à la ligne X :
+	{%  block content %}{% endblock %} # le nom de ce block est : content
+
+RQ : l'espace block : est un espace réservé, dans lequel nous pouvons injecter du contenu .
+
+2. Utiliser un gabarit de base dans un autre fichier html :
+Exemple: 
+	{% extends '..../base.html' %} # pour hérite de notre gabarit de bese
+	
+	{% block content %}
+	
+	.........................}
+	........................ }  # le contenu de block content 
+	.........................}
+
+	{% endblock %}
+
+
+3. charger un ficher css :
+ *. On créer un dossier : static/style.css 
+ *. Dans le ficher html : On ajout 
+	{% load static %} # en haut du fichier 
+	<link rel="stylesheet" href="{% static 'styles.css' %}" /> # dans la section head 
+	
+
+
+
+
+
+
+
+
+
+
+
